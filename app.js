@@ -196,7 +196,7 @@ app.get("/districts/:districtId/", async (request, response) => {
 });
 
 // API 6
-app.delete("/districts/districtId", async (request, response) => {
+app.delete("/districts/districtId/", async (request, response) => {
   let jwtToken;
   const authHeader = request.headers["authorization"];
   jwtToken = authHeader.split(" ")[1];
